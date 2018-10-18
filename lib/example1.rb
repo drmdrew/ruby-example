@@ -2,8 +2,8 @@ require 'json'
 
 class Example1
 
-    def initialize
-        @json = File.read('example1.json')
+    def initialize( f = "example1.json")
+        @json = File.read(f)
         @obj = JSON.parse(@json)
     end
 
