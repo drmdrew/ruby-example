@@ -1,8 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    daemons (1.2.6)
     diff-lcs (1.3)
+    eventmachine (1.2.7)
     json (2.1.0)
+    mustermann (1.0.3)
+    rack (2.0.5)
+    rack-protection (2.0.4)
+      rack
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -16,6 +22,16 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    sinatra (2.0.4)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.4)
+      tilt (~> 2.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
@@ -23,6 +39,8 @@ PLATFORMS
 DEPENDENCIES
   json
   rspec
+  sinatra
+  thin
 
 BUNDLED WITH
    1.16.2
