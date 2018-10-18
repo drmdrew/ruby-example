@@ -9,4 +9,4 @@ jobs:
     steps:
       - checkout
       - run: bundle install
-      - run: ruby example1.rb
+      - run: rspec
